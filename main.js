@@ -4,6 +4,7 @@ function playSound(e){
     if(!audio) return; //stop the function from running
     audio.currentTime = 0; //rewind to start
     audio.play();
+    e.preventDefault();
     key.classList.add('playing');
 };
 
