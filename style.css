@@ -39,6 +39,13 @@ kbd {
     min-height: 100vh;
 }
 
-.sound {
-    font-size: 
+@media only screen and (max-width: 450px){
+    .key {
+        width: 50px;
+        padding: 5px;
+        font-size: 1rem;
+    }
+    kbd {
+        font-size: 20px;
+    }
 }

@@ -5,46 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>JS techno drumkit</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div id="background"></div>
-    <div class="keys">
-        <div class="key" data-key="65">
+    <div class="keys container">
+        <div class="row">
+        <div class="key col-sm-12" data-key="65">
             <kbd>A</kbd>
             <span class="sound">kick</span>
         </div>
-        <div class="key" data-key="83">
+        <div class="key col-sm-12" data-key="83">
             <kbd>S</kbd>
             <span class="sound">snare</span>
         </div>
-        <div class="key" data-key="68">
+        <div class="key col-sm-12" data-key="68">
             <kbd>D</kbd>
             <span class="sound">hihat</span>
         </div>
-        <div class="key" data-key="70">
+        <div class="key col-sm-12" data-key="70">
             <kbd>F</kbd>
             <span class="sound">openhihat</span>
         </div>
-        <div class="key" data-key="71">
+        <div class="key col-sm-12" data-key="71">
             <kbd>G</kbd>
             <span class="sound">ride</span>
         </div>
-        <div class="key" data-key="72">
+        <div class="key col-sm-12" data-key="72">
             <kbd>H</kbd>
             <span class="sound">tink</span>
         </div>
-        <div class="key" data-key="74">
+        <div class="key col-sm-12" data-key="74">
             <kbd>J</kbd>
             <span class="sound">tom</span>
         </div>
-        <div class="key" data-key="75">
+        <div class="key col-sm-12" data-key="75">
             <kbd>K</kbd>
             <span class="sound">clap</span>
         </div>
-        <div class="key" data-key="76">
+        <div class="key col-sm-12" data-key="76">
             <kbd>L</kbd>
             <span class="sound">boom</span>
+        </div>
         </div>
     </div>
     <audio data-key="65" src="sounds/kick.wav"></audio>
@@ -56,6 +59,8 @@
     <audio data-key="74" src="sounds/tom.wav"></audio>
     <audio data-key="75" src="sounds/clap.wav"></audio>
     <audio data-key="76" src="sounds/boom.wav"></audio>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="main.js"></script>
 </body>
 </html>
