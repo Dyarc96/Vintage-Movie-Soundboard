@@ -1,51 +1,97 @@
+@font-face {
+    font-family: Morganite;
+    src: url('font/Morganite-Bold.ttf');
+}
+
+html {
+    font-size: 64%;
+}
+
 body{
     background-image: url(artists-audience-band-426976.jpg);
+    background-position: center;
     background-repeat: repeat-y;
     background-size: cover;
-    background-position: center;
-}
-
-.key {
-    border: solid 4px white;
-    border-radius: 5px;
-    margin: 1rem;
-    font-size: 1.5rem;
-    padding 1rem .5rem;
-    transition: all .07s;
-    width: 100px;
-    text-align: center;
-    color: white;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.4);
-    text-shadow: 0 0 5px black;
-}
-
-.playing {
-    transform: scale(1.05);
-    border-color: #ffc600;
-    box-shadow: 0 0 10px #ffc600;
-}
-
-kbd {
-    display: block;
-    font-size: 40px;
+    font-family: Morganite;
+    height: 100vh;
+    overflow-y: hidden;
 }
 
 .keys {
     display: flex;
-    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
-    flex: 1;
-    min-height: 100vh;
+    padding-top: 20%;
 }
 
-@media only screen and (max-width: 450px){
-    .key {
-        width: 40px;
-        padding: 5px;
-        font-size: 1rem;
+.key {
+    background: rgba(0, 0, 0, 0.1);
+    border: solid .4rem #f6f6f6;
+    border-radius: .5rem;
+    color: #f6f6f6;
+    font-family: sans-serif;
+    font-size: 1.6rem;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    text-shadow: 0 0 5px black;
+    transition: all .15s;
+    width: 8rem;
+}
+
+.playing {
+    border-color: #023D79;
+    box-shadow: 0 0 1rem #023D79;
+    transform: scale(1.05);
+}
+
+kbd {
+    display: block;
+    font-size: 4rem;
+}
+
+.header {
+    font-size: 4.5rem;
+    margin: 0 auto;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    top: 15rem;
+    width: 100%;
+}
+
+.header-span {
+    color: #3565A3;
+}
+
+h2 {
+    color: white;
+    letter-spacing: 1rem;
+    position: relative;
+}
+
+@media screen and (max-width: 900px) {
+    body {
+        font-size: 2rem;
     }
-    kbd {
-        font-size: 17px;
+
+    .header {
+        top: 5%;
+    }
+
+    .keys {
+        flex-wrap: wrap;
+        padding-top: 20%;
+    }
+
+    .key {
+        width: 15rem;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .key {
+        width: 7.5rem;
     }
 }
