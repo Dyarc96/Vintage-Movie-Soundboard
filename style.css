@@ -73,11 +73,12 @@ h2 {
 
 @media screen and (max-width: 900px) {
     body {
-        font-size: 2rem;
+        font-size: 1rem;
     }
 
     .header {
         top: 5%;
+        font-size: 3rem;
     }
 
     .keys {
@@ -90,6 +91,10 @@ h2 {
 }
 
 @media screen and (max-width: 650px) {
+    body {
+        font-size: .6rem;
+    }
+    
     .key {
         width: 7.5rem;
     }
