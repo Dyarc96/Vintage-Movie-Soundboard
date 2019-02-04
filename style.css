@@ -99,3 +99,13 @@ h2 {
         width: 7.5rem;
     }
 }
+
+@media screen and (max-width: 400px) {
+    body {
+        font-size: .4rem;
+    }
+
+    .key {
+        width: 5rem;
+    }
+}
