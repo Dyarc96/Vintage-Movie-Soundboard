@@ -8,11 +8,11 @@ html {
 }
 
 body{
-    background-image: url(artists-audience-band-426976.jpg);
+    background-image: url(jake-hills-194864-unsplash.jpg);
     background-position: center;
     background-repeat: repeat-y;
     background-size: cover;
-    font-family: Morganite;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     height: 100vh;
     overflow-y: hidden;
 }
@@ -41,7 +41,7 @@ body{
 }
 
 .playing {
-    border-color: #023D79;
+    border-color: yellow;
     box-shadow: 0 0 1rem #023D79;
     transform: scale(1.05);
 }
@@ -62,7 +62,7 @@ kbd {
 }
 
 .header-span {
-    color: #3565A3;
+    color: yellow;
 }
 
 h2 {
